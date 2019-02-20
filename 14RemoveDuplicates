@@ -1,0 +1,14 @@
+#!/usr/bin/python
+def remove_duplicates(a):
+	b = []
+	for el in a:
+		if el not in b:
+			b.append(el)
+	return b
+def r_dup(a):
+	a = set(a)
+	return a
+a = ["John", "Alex", "Glaedr", "Alex"]
+print "Original list: " + str(a)
+print "Duplicates removed using sets: " + str(r_dup(a))
+print "Duplicates removed using loop: " + str(remove_duplicates(a))

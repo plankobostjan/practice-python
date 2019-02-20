@@ -1,0 +1,14 @@
+#!/usr/bin/python
+def odd_num(num):
+	c=0
+        a = list(range(1,num+1))
+        for el in a:
+                if num % el == 0:
+                        c = c + 1
+	return c
+num = input("Enter a number: ")
+if odd_num(num)  == 2:
+	print ("This is prime number.")
+else:
+	print ("This in not prime number.")
+

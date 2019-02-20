@@ -1,0 +1,33 @@
+#!/usr/bin/python
+import random
+def compare_numbers(num, usr_guess):
+	cowbull = [0,0]
+	count = 0
+	for i in range(len(num)):
+		if num[i] == usr_guess[i]:
+			cowbull[0]+=1
+		else:
+			for n in range(len(num)):
+				if usr_guess[n] == num[i]:
+					cowbull[1]+=1
+					#if count < 1:
+					#	cowbull[1]+=1
+					#count+=1
+	return cowbull
+rnd = random.randint(1000,9999)
+b=str(rnd)
+num=0
+print rnd
+while num != rnd:
+	num = input("Enter a number: ")
+	a=str(num)
+	result = compare_numbers(a, b)
+	if(result[0] == 1 and result[1]==1):
+		print "You have %d cow and %d bull." %(result[0], result[1])
+	elif(result[0] == 1 and result[1]!=1):
+                print "You have %d cow and %d bulls." %(result[0], result[1])
+	elif(result[0] != 1 and result[1]==1):
+                print "You have %d cows and %d bull." %(result[0], result[1])
+	else:
+		print "You have %d cows and %d bulls." %(result[0], result[1])
+print "Congratulations! You win!"

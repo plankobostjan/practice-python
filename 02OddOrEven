@@ -1,0 +1,6 @@
+#!/usr/bin/python
+number = int(input("Choose a number: "))
+if number%2 == 0:
+	print "Number you've entered is odd."
+else:
+	print "Number you've entered is even."

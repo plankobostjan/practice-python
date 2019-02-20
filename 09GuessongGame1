@@ -1,0 +1,18 @@
+#!/usr/bin/python
+while 1:
+	from random import randint
+	while 1:
+		guess = raw_input("Try to guess number between 1 and 9: ")
+		rnd = randint(1,9)
+		if guess > rnd:
+			print "Your guess is too high. Try again."
+		if guess < rnd:
+			print "Your guess is too low. Try again."
+		else:
+			print "Your guess is correct. Congratulations!"
+			break;
+	if input("If you want to exit type 'exit'. ") == exit:
+		break;
+
+	
+

@@ -1,0 +1,7 @@
+#!/usr/bin/python
+def reverse(a):
+	b = a.split()
+#	print "b: " + str(b)
+	return b[::-1]
+string = input("Enter string containing multiple words: ")
+print reverse(string)

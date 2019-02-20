@@ -1,0 +1,8 @@
+#!/usr/bin/python
+word = str(input("Enter a word: "))
+rev = word[::-1]
+print word + " reversed is written as: " + rev
+if word == rev:
+	print "Word you've enetered is a palidnrome."
+else:
+	print "Word you've enetered is not a palidnrome."

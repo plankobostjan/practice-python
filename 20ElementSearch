@@ -1,0 +1,24 @@
+#!/usr/bin/python
+def binary_search(list, num):
+	while len(list)>1:
+		if(list[len(list) // 2] <= num): #Number is (maybe) in first half of a list
+			list = list[len(list)//2:]
+#			print list
+		elif(list[len(list) // 2] >= num): #Number is (maybe) in second half of a list
+			list = list[:len(list)//2]
+#			print list
+	if list[0] == num:
+		return True
+	else:
+		return False
+list = [1, 4, 15, 18, 22, 27, 33, 35, 41, 45, 56]
+num  = int(input("Enter a number: "))
+#if num in list:
+#	print "Your number is in list."
+#else:
+#	print "Your number is not in list."
+res = binary_search(list, num)
+if res == True:
+	print "Your number is in list."
+else:
+	print "Your number is not in list."

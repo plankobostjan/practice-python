@@ -1,0 +1,5 @@
+#!/usr/bin/python
+list = [1,4,667,537,4,5,8754,5,464,79,4,534,543,4,56,46]
+for element in list:
+	if element<5:
+		print element

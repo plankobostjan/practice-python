@@ -1,0 +1,6 @@
+#!/usr/bin/python
+number = int(input("Enter a number: "))
+print "Divisors of number " + str(number) + " are:"
+for ele in xrange(1, (number+1)):
+	if(number%ele==0):
+		print ele
